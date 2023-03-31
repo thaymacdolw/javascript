@@ -13,3 +13,55 @@
 //Se NÃO é a primeira compra do cliente, NÃO pagar a vista e a compra for menor que R$ 500 => SEM DESCONTO- A função deve imprimir na tela:
 //Se o cliente recebeu desconto, imprima na tela um agradecimento pela compra, o valor total sem desconto, o valor total com desconto e a porcentagem de desconto que ele recebeu.
 //Se o cliente não recebeu desconto, imprima na tela um agradecimento pela compra, o valor total da sua compra e um cupom de desconto. Esse cupom deve ser um valor aleatório entre 10 e 20% para a próxima compra.
+
+function calculateDiscount ( name, value, firstPurchase, cashPayment){
+
+    if(firstPurchase && cashPayment){
+
+        if (value > 1000){
+            '30% de desconto';
+        }
+        else if (value < 500) {
+            '20% de desconto';
+        }
+        else {
+            '25% de desconto';
+        }
+    }
+    if(firstPurchase && !cashPayment){
+        if (value > 1000){
+            '20% de desconto';
+        }
+        else if (value < 500) {
+            '10% de desconto';
+        }
+        else {
+            '15% de desconto';
+        }
+    }
+    if(!firstPurchase && cashPayment){
+        if (value > 1000){
+            '20% de desconto';
+        }
+        else if (value < 500) {
+            '10% de desconto';
+        }
+        else {
+            '15% de desconto';
+        }
+    }
+    if(!firstPurchase && !cashPayment){
+        if (value > 1000){
+            '10% de desconto';
+        }
+        else if (value < 500) {
+            Math.random () * (20 - 10) + 10;
+            '0% de desconto';
+        }
+        else {
+            '5% de desconto';
+        }
+    }
+}
+
+console.log (calculateDiscount)
