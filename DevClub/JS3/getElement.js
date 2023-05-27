@@ -14,11 +14,37 @@ querySelectorALL -> trás TODOS os elementos que encontrar
 */
 
 
-/* EXEMPLOS
+ /*EXEMPLOS 
 
-getElementById :
+getElementById : */
 
 const input = document.getElementById("nomedaID") 
 console.log (input)
 
-*/
+
+ /* getElementByClassName : */
+
+const elements = document.getElementByClassName ("nomedaclasse")
+console.log (elements)
+
+ /* getElementByTagName : */
+ 
+const elements = document.getElementByTagName ("h1")
+console.log (elements)
+
+
+ /* getElementByName : */
+ const elements = document.getElementByName ("nomedoName")
+console.log (elements)
+
+
+ /* querrySelector : */
+ const elements = document.querrySelector ("nomedoelemento")
+ console.log (elements)
+
+ 
+ /* querrySelectorAll : */
+ const elements = document.querrySelectorAll ("nomedoelemento")
+ console.log (elements)
+
+
