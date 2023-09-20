@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>0</h1>
+    <button onclick="stop()">Stop</button>
+    <button onclick="start()">Start</button>
+</body>
+<script>
+let number = 0
+let counter
+let h1 =document.querySelector('h1')
+
+function start() {
+ counter = setInterval( function(){
+    number++
+    h1.innerHTML = number
+ },1000)
+}
+function stop(){
+    clearInterval(counter)
+}
+
+</script>
+</html>
