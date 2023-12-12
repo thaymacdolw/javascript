@@ -38,9 +38,3 @@ const marketValueOldCompanies = companies
 
 console.log(marketValueOldCompanies)
 
-
-
-
-//Subtrair 10% de valor de mercado a todas as empresas
-//Filtrar somente companhias fundadas após 1980
-// Somar o valor de mercado das restantes
